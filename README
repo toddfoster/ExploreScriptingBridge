@@ -1,0 +1,8 @@
+Trying out Apple's ScriptingBridge, an ObjC interface to the process interop
+as performed by AppleScript.
+
+Get bridge with:
+    sdef /Applications/iTunes.app | sdp -fh --basename iTunes
+
+Build with:
+    gcc -ObjC -framework Foundation -framework ScriptingBridge itunes.m
