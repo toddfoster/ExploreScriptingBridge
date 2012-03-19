@@ -16,8 +16,7 @@ int main()
 	[textEdit open:[NSURL fileURLWithPath:@"/Users/todd.foster/.profile"]];
 	NSLog(@"Documents count = %d", [[textEdit documents] count]);
 
-	// Not working yet
-	[[[textEdit documents] objectAtIndex:0] saveAs:@"" in:[NSURL fileURLWithPath:@"/Users/todd.foster/Desktop/deleteMe"]];
+	[[[textEdit documents] objectAtIndex:0] saveAs:nil in:[NSURL fileURLWithPath:@"/Users/todd.foster/Desktop/deleteMe.html"]];
 
 	[textEdit quitSaving:TextEditSavoNo];
 
